@@ -1,0 +1,120 @@
+/* Custom Styles for Header */
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* sidebar */
+#sidebar-wrapper {
+    min-height: 100vh;
+    width: 250px;
+    transition: all 0.3s ease;
+    
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    font-weight: bold;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  #menu-toggle {
+    background-color: transparent;
+    border: none;
+  }
+
+  .toggled {
+    display: none
+  }
+  
+  @media (max-width: 768px) {
+    #sidebar-wrapper {
+      width: 0;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      width: 250px;
+    }
+  
+    #wrapper.toggled #page-content-wrapper {
+      width: calc(100% - 250px);
+    }
+  }
+
+  
+  /* CSS untuk bagian profil */
+
+/* Gaya untuk gambar profil */
+.text-center img {
+    width: 100px; /* Ubah lebar gambar profil */
+    height: 100px; /* Ubah tinggi gambar profil */
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+  }
+  
+  /* Gaya untuk nama */
+  .text-center h2 {
+    margin-top: 10px; /* Jarak antara gambar profil dan nama */
+    font-size: 24px; /* Ukuran font nama */
+    color: #333; /* Warna teks nama */
+  }
+  
+    /* CSS untuk menata kartu-kartu */
+    /* CSS untuk Cards for Summary Data */
+
+/* Gaya untuk setiap card */
+.card {
+    border: 1px solid #ccc; /* Garis tepi kartu */
+    border-radius: 8px; /* Sudut bulat pada kartu */
+    text-align: center; /* Konten teks diatur ke tengah */
+    height: 100%; /* Menyesuaikan tinggi kartu */
+  }
+  
+  /* Gaya untuk judul kartu */
+  .card-title {
+    font-size: 24px; /* Ukuran font judul */
+    margin-bottom: 10px; /* Jarak antara judul dan teks */
+  }
+  
+  /* Gaya untuk teks dalam kartu */
+  .card-text {
+    font-size: 16px; /* Ukuran font teks */
+  }
+  
+  /* CSS untuk Table */
+/* CSS untuk Table */
+
+/* Gaya untuk tabel */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Jarak antara tabel dan elemen sebelumnya */
+  }
+  
+  /* Gaya untuk header kolom */
+  thead {
+    background-color: #f5f5f5; /* Warna latar belakang header */
+  }
+  
+  th, td {
+    padding: 10px; /* Padding di antara sel */
+    text-align: center; /* Teks diatur ke tengah */
+  }
+  
+  /* Gaya untuk baris ganjil */
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Warna latar belakang baris ganjil */
+  }
+  
+  /* Gaya untuk sel dalam baris */
+  tbody td {
+    vertical-align: middle; /* Teks vertikal di tengah */
+  }
+  
