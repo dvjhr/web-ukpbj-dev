@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Todo</title>
-</head>
+<html lang="en">
+  <head>
+	{% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Menu</title>
+    <!-- Load Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Load Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Your Custom CSS -->
+    <link href="{{ url_for('assets', path='style/Style.css') }}" rel="stylesheet"> 
+	{% endblock %}
+  </head>
 <body>
-	<h1>Todo app</h1>
+
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+	{% block sidebar %}
+    <div class="bg-light border-right" id="sidebar-wrapper">
+		<div class="sidebar-heading">UKBPJ</div>
+		<div class="list-group list-group-flush">
+			<!-- Sidebar Menu -->
+			<a href="/beranda" class="list-group-item list-group-item-action active">
+				<i class="fas fa-home mr-2"></i>Beranda
+			</a>
+			<a href="/pekerjaan" class="list-group-item list-group-item-action bg-light">
+				<i class="fas fa-file-alt mr-2"></i>Pekerjaan Saya
+			</a>
+			<a href="/rekap" class="list-group-item list-group-item-action bg-light">
+				<i class="far fa-save mr-2"></i>Rekap
+			</a>
+		</div>
+    </div>
+	{% endblock %}
+    <!-- /#sidebar-wrapper -->
+    
+    <!-- Page Content -->
+	<div id="page-content-wrapper" class="container-fluid">
+      
+      <!-- Header -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn" id="menu-toggle"><i class="fas fa-bars"></i></button>
+        <span class="navbar-brand mb-0 h1 ml-2"></span>
+        <div class="ml-auto">
+          <img src="https://icstar.oneindonesia.id/cc-content/themes/icstar2022/asset/img/team-announcement/6.%20Dava%20Aditya%20Jauhar.png" alt="Profile Picture" class="profile-image mr-3">
+          <!-- You can replace the placeholder URL above with your actual profile picture -->
+        </div>
+      </nav>
+      <!-- /Header -->
+
+    <!-- Page Content -->
+	<div id="page-content-wrapper" class="container-fluid">
+		{% block content %}{% endblock %}
+	</div>
+	</div>
+
+<!-- Load Bootstrap JS and jQuery -->
+{% block jsscript %}
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JavaScript for Sidebar -->
+<!-- <script>
+	$("#menu-toggle").click(function(e) {
+		e.preventDefault();
+		$("#wrapper").toggleClass("toggled");
+		});
+	</script> -->
+<script src="{{ url_for('assets', path='style/Style.css') }}"></script>
+{% endblock %}	
+
 </body>
 </html>
