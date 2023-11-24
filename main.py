@@ -16,7 +16,7 @@ async def home(request: Request):
     return templates.TemplateResponse("beranda.html", context)
 
 @app.get("/{page_name}")
-def any_page(request: Request, page_name: str):
+async def any_page(request: Request, page_name: str):
     return templates.TemplateResponse(f"{page_name}.html", context={"request":request})
 
 if __name__ == "__main__":
