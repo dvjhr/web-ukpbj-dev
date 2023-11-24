@@ -1,40 +1,188 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Upload</title>
-  <!-- Load Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+  <div class=" mt-4">
+    <div class="card-detail">
+      <div class="card-body">
+        <h5 class="card-title">Data</h5>
+        <!-- Informasi Pekerjaan -->
+        <form id="jobForm">
+          <div class="form-group">
+            <label for="namaUnit">Nama Unit:</label>
+            <input type="text" class="form-control" id="namaUnit" name="namaUnit" value="">
+          </div>
+          <div class="form-group">
+            <label for="namaPekerjaan">Nama Pekerjaan:</label>
+            <input type="text" class="form-control" id="namaPekerjaan" name="namaPekerjaan" value="">
+          </div>
+          <div class="form-group">
+            <label for="namaPekerjaan">Pagu:</label>
+            <input type="text" class="form-control" id="Pagu" name="Pagu" value=" " >
+          </div>
+          <div class="form-group">
+            <label for="namaPekerjaan">Tanggal Pengajuan:</label>
+            <input type="" class="form-control" id="date" name="date" value="" >
+          </div>
+          <div class="form-group">
+            <label for="namaPekerjaan">Nama PPK:</label>
+            <input type="text" class="form-control" id="Pagu" name="Pagu" value="" >
+          </div>
+          <div class="form-group">
+            <label for="namaPekerjaan">Nama PP</label>
+            <input type="text" class="form-control" id="Pagu" name="Pagu" value="" >
+          </div>
+          <div class="form-group">
+            <label for="namaPekerjaan">Nama POKJA</label>
+            <input type="text" class="form-control" id="Pagu" name="Pagu" value="  " >
+          </div>
+          <!-- ...tambahkan input fields lainnya sesuai kebutuhan... -->
+  
+          <!-- File Info -->
+          <div class="file-info mt-3">
+            <h6 class="card-subtitle mb-2 text-muted">File Info</h6>
+            <div class="form-group">
+              <label for="file">Kerangka kerja acuan:</label>
+              <input type="file" class="form-control-file" id="fileKAK" name="fileKAK" accept=".pdf">
+            </div>
+            
+            <!-- disini -->
+            <div class="mb-3">
+              <label for="formFile" class="form-label">Default file input example</label>
+              <input class="form-control-file" type="file" id="formFile">
+            </div>
+            <!-- disini -->
 
-  <div class="container mt-4">
-    <h2>Form Upload Data</h2>
-    <form>
-      <div class="form-group">
-        <label for="nama">Nama:</label>
-        <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama">
+            <div class="form-group">
+              <label for="file">Harga Perkiraan Sendiri:</label>
+              <input type="file" class="form-control-file" id="fileHPS" name="fileHPS" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Spesifik Teknis:</label>
+              <input type="file" class="form-control-file" id="fileTeknis" name="fileTeknis" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Rancangan kontrak:</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Dokumen Persyaratan Penyedia Pengadaan:</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Dokumen persyaratan proses pemilihan:</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Jadwal pelaksanaan:</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Gambar rancangan pekerjaan:</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Dokumen studi kelayakan:</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Dokumen penawaran administratif:</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Surat penawaran penyedia : </label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Sertifikasi lisensi :</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Berita acara pemberi penjelasan:</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Berita acara pengumuman negosiasi :</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Berita acara sanggah:</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Berita acara penetapan :</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Surat penunjukkan penyedia barang/jasa :</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Dokumen kontrak : </label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Surat perintah mulai kerja :</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Surat jaminan pelaksanaan:</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">jaminan uang muka: </label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Surat jaminan pemeliharaan:</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Surat tagihan:</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Surat pemesanan e- purchasing : </label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Surat perintah membayar :</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Surat perintah pencairan dana : </label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Laporan pelaksanaan pekerjaan :</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Laporan penyelesaian pekerjaan :</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Berita acara pemeriksaan hasil pekerjaan:</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Berita acara serah terima sementara:</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+            <div class="form-group">
+              <label for="file">Berita acara serah terima :</label>
+              <input type="file" class="form-control-file" id="filekontrak" name="filekontrak" accept=".pdf">
+            </div>
+
+            <!-- ...Tambahkan input file lainnya di sini... -->
+  
+            <!-- Tombol Submit -->
+            <button type="submit" class="btn btn-primary">Simpan</button>
+          </div>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Masukkan Email">
-      </div>
-      <div class="form-group">
-        <label for="pesan">Pesan:</label>
-        <textarea class="form-control" id="pesan" rows="3" placeholder="Tuliskan Pesan Anda"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="file">Unggah File:</label>
-        <input type="file" class="form-control-file" id="file">
-      </div>
-      <button type="submit" class="btn btn-primary">Kirim</button>
-    </form>
+    </div>
   </div>
-
-  <!-- Load Bootstrap JS and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+  {% endblock %}
 </body>
 </html>

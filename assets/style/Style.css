@@ -117,4 +117,113 @@ nav {
   tbody td {
     vertical-align: middle; /* Teks vertikal di tengah */
   }
+
   
+/* Detail pekerjaan */  
+/* Style for the file info section */
+.file-info {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+/* Style for the list of file info */
+.file-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Style for each item in the file info list */
+.file-info li {
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+
+/* Style for the card title */
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Style for the card subtitle */
+.card-subtitle {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: #6c757d;
+}
+
+/* TAMBAH */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card-detail {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Stylize file input */
+/* input[type="file"] {
+  display: none;
+} */
+
+/* label[for="file"], label[for="file"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 10px;
+} */
+
+/* label[for="file"]:hover, label[for="file"]:hover {
+  background-color: #f0f0f0;
+} */
+
+/* input[type="text"].form-control, */
+input[type="file"].form-control {
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* Atur margin-bottom */
+input[type="text"].form-control,
+input[type="file"].form-control {
+  margin-bottom: 1rem; /* Ubah sesuai kebutuhan */
+}
+
+/* Style Submit button */
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+label {
+  font-weight: bold;
+}
+
+
+
