@@ -5,26 +5,26 @@
       <div class="card-body">
         <h5 class="card-title">Data</h5>
         <!-- Informasi Pekerjaan -->
-        <form id="jobForm">
+        <form id="jobForm" method="post" action="/simpan/{{ data['uuid'] }}">
           <div class="form-group">
             <label for="namaUnit">Nama Unit:</label>
-            <input type="text" class="form-control" id="" name="nama_unit" value="">
+            <input type="text" class="form-control" id="" name="nama_unit" value="{{ data['nama_unit'] }}" placeholder="{{ data['nama_unit'] }}">
           </div>
           <div class="form-group">
             <label for="namaPekerjaan">Nama Pekerjaan:</label>
-            <input type="text" class="form-control" id="" name="nama_pekerjaan" value="">
+            <input type="text" class="form-control" id="" name="nama_pekerjaan" value="{{ data['nama_pekerjaan'] }}" placeholder="{{ data['nama_pekerjaan'] }}">
           </div>
           <div class="form-group">
             <label for="namaPekerjaan">Pagu:</label>
-            <input type="text" class="form-control" id="" name="pagu" value=" " >
+            <input type="text" class="form-control" id="" name="pagu" value="{{ data['pagu'] }}" placeholder="{{ data['pagu'] }}">
           </div>
           <div class="form-group">
             <label for="namaPekerjaan">Tanggal Pengajuan:</label>
-            <input type="date" class="form-control" id="" name="tgl_pengajuan" value="" >
+            <input type="date" class="form-control" id="" name="tgl_pengajuan" value="{{ data['tgl_pengajuan'] }}" placeholder="{{ data['tgl_pengajuan'] }}">
           </div>
           <div class="form-group">
             <label for="namaPekerjaan">Nama PPK:</label>
-            <input type="text" class="form-control" id="" name="nama_ppk" value="" >
+            <input type="text" class="form-control" id="" name="nama_ppk" value="{{ data['nama_ppk'] }}" placeholder="{{ data['nama_ppk'] }}">
           </div>
           <!-- Opsional, ada opsi untuk menambahkan dengan memilih dari daftar nama yang ada, request dikirim dalam bentuk id anggota ke db -->
           <div class="form-group">

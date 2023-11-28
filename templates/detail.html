@@ -9,31 +9,23 @@
       <form id="jobForm">
         <div class="form-group">
           <label for="namaUnit">Nama Unit:</label>
-          <input type="text" class="form-control" id="namaUnit" name="namaUnit" value="Teknik Kimia" readonly>
+          <input type="text" class="form-control" id="" name="nama_unit" value="{{ data['nama_unit'] }}" readonly>
         </div>
         <div class="form-group">
           <label for="namaPekerjaan">Nama Pekerjaan:</label>
-          <input type="text" class="form-control" id="namaPekerjaan" name="namaPekerjaan" value="Pengadaan Laboratorium" readonly>
+          <input type="text" class="form-control" id="" name="nama_pekerjaan" value="{{ data['nama_pekerjaan'] }}" readonly>
         </div>
         <div class="form-group">
           <label for="namaPekerjaan">Pagu:</label>
-          <input type="text" class="form-control" id="Pagu" name="Pagu" value=" Rp.130.000" readonly>
+          <input type="text" class="form-control" id="" name="pagu" value="Rp{{ data['pagu'] }}" readonly>
         </div>
         <div class="form-group">
           <label for="namaPekerjaan">Tanggal Pengajuan:</label>
-          <input type="" class="form-control" id="date" name="date" value="09-09-2023" readonly>
+          <input type="text" class="form-control" id="" name="tgl_pengajuan" value="{{ data['tgl_pengajuan'] }}" readonly>
         </div>
         <div class="form-group">
           <label for="namaPekerjaan">Nama PPK:</label>
-          <input type="text" class="form-control" id="Pagu" name="Pagu" value="Dava" readonly>
-        </div>
-        <div class="form-group">
-          <label for="namaPekerjaan">Nama PP</label>
-          <input type="text" class="form-control" id="Pagu" name="Pagu" value=" Ira" readonly>
-        </div>
-        <div class="form-group">
-          <label for="namaPekerjaan">Nama POKJA</label>
-          <input type="text" class="form-control" id="Pagu" name="Pagu" value=" - " readonly>
+          <input type="text" class="form-control" id="" name="nama_ppk" value="{{ data['nama_ppk'] }}" readonly>
         </div>
         <!-- ...tambahkan input fields lainnya sesuai kebutuhan... -->
 
@@ -41,46 +33,43 @@
         <div class="file-info mt-3">
           <h6 class="card-subtitle mb-2 text-muted">File Info</h6>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Kerangka kerja acuan: <a href="file/KAK.pdf" target="_blank">KAK.pdf</a></li>
-            <li class="list-group-item">Harga Perkiraan Sendiri: <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Spesifik Teknis: <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Rancangan kontrak: <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Dokumen Persyaratan Penyedia Pengadaan: <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Dokumen persyaratan proses pemilihan: <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Jadwal pelaksanaan: <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Gambar rancangan pekerjaan: <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Dokumen studi kelayakan: <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Dokumen penawaran administratif: <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Surat penawaran penyedia : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Sertifikasi lisensi : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Berita acara pemberi penjelasan: <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Berita acara pengumuman negosiasi : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Berita acara sanggah: <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Berita acara penetapan : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Surat penunjukkan penyedia barang/jasa : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Dokumen kontrak  : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Surat perintah mulai kerja  : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Surat jaminan pelaksanaan : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Surat jaminan uang muka  : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Surat jaminan pemeliharaan  : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Surat tagihan : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Surat pemesanan e- purchasing  : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Surat perintah membayar  : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Surat perintah pencairan dana  : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Laporan pelaksanaan pekerjaan : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Laporan penyelesaian pekerjaan: <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Berita acara pemeriksaan hasil pekerjaan    : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Berita acara serah terima sementara: <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-            <li class="list-group-item">Berita acara serah terima : <a href="file/HPS.pdf" target="_blank">HPS.pdf</a></li>
-        </ul>
-      </div>
-      <a href="./tambah.html" class="btn btn-primary"><i class="fas fa-edit"></i> Edit</a>
+            <li class="list-group-item">Kerangka kerja acuan: <a href="file/KAK.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Harga Perkiraan Sendiri: <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Spesifikasi Teknis: <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Rancangan kontrak: <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Dokumen Persyaratan Penyedia Pengadaan: <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Dokumen persyaratan proses pemilihan: <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Jadwal pelaksanaan: <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Gambar rancangan pekerjaan: <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Dokumen studi kelayakan: <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Dokumen penawaran administratif: <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Surat penawaran penyedia : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Sertifikasi lisensi : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Berita acara pemberi penjelasan: <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Berita acara pengumuman negosiasi : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Berita acara sanggah: <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Berita acara penetapan : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Surat penunjukkan penyedia barang/jasa : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Dokumen kontrak  : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Surat perintah mulai kerja  : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Surat jaminan pelaksanaan : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Surat jaminan uang muka  : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Surat jaminan pemeliharaan  : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Surat tagihan : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Surat pemesanan e- purchasing  : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Surat perintah membayar  : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Surat perintah pencairan dana  : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Laporan pelaksanaan pekerjaan : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Laporan penyelesaian pekerjaan: <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Berita acara pemeriksaan hasil pekerjaan    : <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Berita acara serah terima sementara: <a href="file/HPS.pdf" target="_blank">view</a></li>
+            <li class="list-group-item">Berita acara serah terima : <a href="file/HPS.pdf" target="_blank">view</a></li>
+          </ul>
+        </div>
+        <a href="/edit/{{ data['uuid'] }}" class="btn btn-primary"><i class="fas fa-edit"></i> Edit</a>
+      </form>
     </div>
   </div>
 </div>
-          </ul>
-        </div>
 {% endblock %}
 
-</body>
-</html>
