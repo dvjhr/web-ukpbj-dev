@@ -28,11 +28,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `pekerjaan` (
-  `id` int(11) NOT NULL,
-  `nama_pekerjaan` varchar(20) DEFAULT NULL,
-  `pagu` int(11) DEFAULT NULL,
+  `uuid` BINARY(16) NOT NULL PRIMARY KEY UNIQUE,
+  `nama_unit` varchar(128) DEFAULT NULL,
+  `nama_pekerjaan` varchar(255) DEFAULT NULL,
+  `pagu` varchar(13) DEFAULT NULL,
   `tgl_pengajuan` datetime DEFAULT NULL,
-  `nama_ppk` varchar(16) DEFAULT NULL,
+  `nama_ppk` varchar(255) DEFAULT NULL,
   `kak` varchar(255) DEFAULT NULL,
   `hps` varchar(255) DEFAULT NULL,
   `spesifikasi_teknis` varchar(255) DEFAULT NULL,

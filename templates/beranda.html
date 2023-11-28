@@ -58,18 +58,16 @@
             </tr>
           </thead>
           <tbody>
-            {% for index in range(1,5) %}
+            {% for uuid, nama_unit, nama_pekerjaan, tgl_pengajuan, nama_ppk in data %}
             <tr>
-              <th scope="row">{{ index }}</th>
-              <td>Paijo</td>
-              <td>Unit A</td>
-              <td>2023-11-20</td>
+              <th scope="row">{{ loop.index }}</th>
+              <td>{{ nama_ppk }}</td>
+              <td>{{ nama_unit }}</td>
+              <td>{{ tgl_pengajuan }}</td>
               <td>Dalam Proses</td>
-              <td><a href="/detail">Detail</td></a>
             </tr>
             {% endfor %}
-            <!-- ...tambahkan baris lainnya di sini sesuai data yang diinginkan -->
-          </tbody>
+            </tbody>
         </table>
       </div>
       <!-- /Table -->

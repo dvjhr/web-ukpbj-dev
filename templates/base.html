@@ -4,7 +4,7 @@
 	{% block head %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar Menu</title>
+    <title>Situs Pencatatan UKPBJ ITS</title>
     <!-- Load Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Load Font Awesome -->
@@ -69,6 +69,18 @@
 		$("#wrapper").toggleClass("toggled");
 		});
 	</script> -->
+<script>
+  // Get the current path of the page
+
+  // Select all sidebar links
+  var activeNavItem = document.querySelectorAll(".list-group-item");
+
+  // Loop through the links and add the "active" class to the matching link
+  activeNavItem.click(function(){
+    activeNavItem.removeClass('bg-light');
+    $(this).addClass('active');
+  });
+</script>
 <script src="{{ url_for('assets', path='js/main.js') }}"></script>
 <script src="{{ url_for('assets', path='style/Style.css') }}"></script>
 {% endblock %}	
