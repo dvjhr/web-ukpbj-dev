@@ -280,4 +280,26 @@ button:hover {
   background-color: #2980b9;
 }
 
+/* LOGIN */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Ganti dengan warna latar belakang yang diinginkan */
+}
+
+.container {
+  width: 350px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+
 
